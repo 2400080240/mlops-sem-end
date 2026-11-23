@@ -1,0 +1,11 @@
+streamlit
+pandas
+scikit-learn
+joblib
+mlflow
+fastapi
+uvicorn[standard]
+requests
+pydantic
+evidently
+dvc

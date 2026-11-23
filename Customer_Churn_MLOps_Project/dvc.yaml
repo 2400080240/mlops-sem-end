@@ -1,0 +1,13 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/churn.csv
+    outs:
+      - models/churn_model.pkl
+      - data/reference.csv
+      - data/current.csv
+    metrics:
+      - reports/metrics.json:
+          cache: false
